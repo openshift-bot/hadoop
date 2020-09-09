@@ -1,4 +1,4 @@
-FROM registry.svc.ci.openshift.org/openshift/release:rhel-7-release-openshift-4.6 AS build
+FROM registry.svc.ci.openshift.org/openshift/release:rhel-7-base-openshift-4.6 AS build
 # This FROM is RHEL7 based because the CI based hadoop build requires a precise
 # version of protobuf (2.5.0) which seems to be unavilable on RHEL8.
 
